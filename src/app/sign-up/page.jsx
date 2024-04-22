@@ -1,15 +1,22 @@
-import AccountForm from "./_components/_ui/AccountForm";
+import AccountForm from "../_components/_ui/AccountForm";
 import { Input, Button } from "@chakra-ui/react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
-export default function SignIn() {
+export default function SignUp() {
 	return (
-		<AccountForm>
+		<AccountForm isLogin={false}>
 			<form>
+				<Input placeholder="E-mail" name="email" rounded={"2px"} mb={"8px"} />
 				<Input
-					placeholder="Username or email"
+					placeholder="Full Name"
+					name="fullname"
+					rounded={"2px"}
+					mb={"8px"}
+				/>
+				<Input
+					placeholder="Username"
 					name="username"
 					rounded={"2px"}
 					mb={"8px"}
@@ -21,7 +28,7 @@ export default function SignIn() {
 					mb={"8px"}
 				/>
 				<Button colorScheme={"twitter"} className="w-full">
-					Submit
+					Sign-up
 				</Button>
 			</form>
 		</AccountForm>
