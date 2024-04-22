@@ -1,13 +1,14 @@
 "use client";
-import { Box, Heading, Divider, AbsoluteCenter } from "@chakra-ui/react";
+import { Box, Divider, AbsoluteCenter } from "@chakra-ui/react";
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function AccountForm({ children, isLogin = true }) {
 	return (
 		<div className="flex justify-center items-center h-screen">
 			<Box maxW={"320px"} padding={"20px"}>
 				<center>
-					<Heading mb={"8px"}>Nistagram</Heading>
+					<Logo />
 					{children}
 					<Box position="relative" py="25px">
 						<Divider />
