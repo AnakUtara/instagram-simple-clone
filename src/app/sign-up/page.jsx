@@ -1,4 +1,4 @@
-import AccountForm from "../_ui/AccountForm";
+import AccountForm from "../_ui/login/AccountForm";
 import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";

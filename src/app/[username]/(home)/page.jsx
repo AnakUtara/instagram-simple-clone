@@ -1,4 +1,4 @@
-import Card from "@/app/_ui/Card";
+import Card from "@/app/_ui/home/Card";
 
 export default function Home() {
 	return (

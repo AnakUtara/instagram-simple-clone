@@ -2,7 +2,7 @@
 import { FaHouse, FaHeart, FaRegSquarePlus } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "./Logo";
+import Logo from "../Logo";
 import clsx from "clsx";
 
 export default function MainNav({
