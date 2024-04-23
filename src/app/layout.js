@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
+import { inter } from "./_utils/fonts";
 import "./globals.css";
-import Provider from "./_components/_provider/chakraProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Nistagram",
@@ -12,9 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="h-full">
-			<body className={inter.className}>
-				<Provider>{children}</Provider>
-			</body>
+			<body className={`${inter.className}`}>{children}</body>
 		</html>
 	);
 }

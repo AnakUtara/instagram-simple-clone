@@ -1,5 +1,5 @@
-import AccountForm from "./_components/_ui/AccountForm";
-import { Input, Button } from "@chakra-ui/react";
+import AccountForm from "./_ui/login/AccountForm";
+import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -7,22 +7,23 @@ import axios from "axios";
 export default function SignIn() {
 	return (
 		<AccountForm>
-			<form>
-				<Input
+			<form className="flex flex-col gap-5">
+				<input
+					className="input input-bordered input-info input-md"
 					placeholder="Username or email"
 					name="username"
-					rounded={"2px"}
-					mb={"8px"}
+					required
 				/>
-				<Input
+				<input
+					type="password"
+					className="input input-bordered input-info input-md"
 					placeholder="Password"
 					name="password"
-					rounded={"2px"}
-					mb={"8px"}
+					required
 				/>
-				<Button colorScheme={"twitter"} className="w-full">
+				<Link href="/username" className="btn btn-block btn-info text-white">
 					Submit
-				</Button>
+				</Link>
 			</form>
 		</AccountForm>
 	);
