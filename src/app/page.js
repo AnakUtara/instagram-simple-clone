@@ -12,15 +12,14 @@ export default function SignIn() {
 					className="input input-bordered input-info input-md"
 					placeholder="Username or email"
 					name="username"
-					rounded={"2px"}
-					mb={"8px"}
+					required
 				/>
 				<input
+					type="password"
 					className="input input-bordered input-info input-md"
 					placeholder="Password"
 					name="password"
-					rounded={"2px"}
-					mb={"8px"}
+					required
 				/>
 				<Link href="/username" className="btn btn-block btn-info text-white">
 					Submit
