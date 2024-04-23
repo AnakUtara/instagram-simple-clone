@@ -1,0 +1,16 @@
+{
+	"user": [
+		{ "id": 1, "username": "test", "password": "1234567" },
+		{ "id": 2, "username": "admin", "password": "password" }
+	],
+	"posts": [
+		{
+			"id": 1,
+			"username": "udin",
+			"image": "https://images.pexels.com/photos/20800208/pexels-photo-20800208/free-photo-of-a-small-lighthouse-on-a-small-island-in-the-middle-of-the-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			"caption": "small island in the middle of water...",
+			"likes": ["ujang", "aliong"],
+			"comments": [""]
+		}
+	]
+}

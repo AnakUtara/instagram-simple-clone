@@ -9,9 +9,9 @@ import Link from "next/link";
 
 export default function Card() {
 	return (
-		<div className="card max-w-[470px] bg-base-100 border-b-2 rounded-none">
-			<div className="flex justify-between items-center p-4 sm:py-4">
-				<div className="flex items-center gap-4">
+		<div className="card max-w-[470px] bg-base-100 border-b-2 rounded-none mb-3">
+			<div className="flex justify-between items-center py-4 px-1">
+				<div className="flex items-center gap-x-4">
 					<div className="avatar">
 						<div className="w-8 rounded-full ring ring-primary">
 							<img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -23,7 +23,7 @@ export default function Card() {
 			</div>
 			<figure>
 				<img
-					className="aspect-video object-cover"
+					className="w-full rounded-sm"
 					src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
 					alt="Shoes"
 				/>
