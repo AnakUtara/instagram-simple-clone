@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import Suggested from "./component/suggested";
+import Suggested from "./component/suggested/suggested";
+import Edit from "./component/Edit/edit";
 
 export default function SignIn() {
   return (
@@ -27,6 +28,7 @@ export default function SignIn() {
     // 		</Link>
     // 	</form>
     // </AccountForm>
-    <Suggested />
+    // <Suggested />
+    <Edit />
   );
 }
